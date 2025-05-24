@@ -17,8 +17,6 @@ public class GameService {
 
     @Autowired
     private GameRepository gameRepository;
-    @Autowired
-    private GameService gameService;
 
     @Transactional(readOnly = true)
     public GameDTO findById(Long id){
